@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor-principal: #990000;
+    --white-color: #fff;
+}
+
+body {
+    background: #990000;
+    overflow-x: hidden;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 150px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #990000), 
+                url(image.png) no-repeat center center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+  }
+
+  .nome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+.nome h1 {
+    color: var(--white-color);
+    font-size: 44px;
+    text-decoration: underline;
+}
+
+.nome p {
+    font-size: 22px;
+    color: var(--white-color);
+    font-weight: 300;
+}
+
+.link-a {
+    text-decoration: none;
+    color: var(--cor-principal);
+}
+
+.nome button {
+    text-decoration: none;
+    width: 200px;
+    font-weight: 600;
+    background-color: var(--white-color);
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.nome button:hover {
+    background-color: #c4c4c4;
+    color: #5a0000;
+}
+
+.pizzas-disponiveis h3 {
+    font-size: 34px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.div-pizzas ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85vw;
+    gap: 90px;
+    list-style: none;
+}
+
+.div-pizzas ul li {
+    background-color: white;
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-pizzas ul li p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-principal);
+}
+
+.div-pizzas ul li h5 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.div-pizzas ul li h5 span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.div-pizzas ul li input {
+    height: 22px;
+    width: 22px;
+}
+
+.li-special {
+    display: none;
+}
+
+.btn-comprar {
+    text-decoration: none;
+    width: 200px;
+    font-weight: 600;
+    color: var(--cor-principal);
+    background-color: var(--white-color);
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.btn-comprar:hover {
+    background-color: #c4c4c4;
+    color: #5a0000;
+}
