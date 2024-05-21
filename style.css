@@ -49,6 +49,10 @@ body {
     z-index: -1;
   }
 
+  .logo-pizza {
+    filter: drop-shadow(3px 3px 5px #fff);
+  }
+
   .nome {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor-principal: #990000;
+    --white-color: #fff;
+}
+
+body {
+    background: var(--cor-principal);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30vh auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -150px;
+}
+
+.header img {
+    filter: drop-shadow(3px 3px 5px #fff);
+}
+
+.nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome h1 {
+    color: var(--white-color);
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.nome p {
+    color: var(--white-color);
+    font-size: 22px;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 400px;
+    margin-top: 50px;
+    padding: 15px;
+    box-shadow: 0px 0px 29px 5px rgba(255,255,255,0.34);
+    -webkit-box-shadow: 0px 0px 29px 5px rgba(255,255,255,0.34);
+    -moz-box-shadow: 0px 0px 29px 5px rgba(255,255,255,0.34);
+}
+
+.textos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textos-container h1 {
+    color: var(--cor-principal);
+    font-size: 28px;
+}
+
+.textos-container h2 {
+    color: var(--cor-principal);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.formulario-pag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 50%;
+}
+
+.divisao-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.divisao-label label {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.divisao-label select {
+    color: var(--cor-principal);
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    font-weight: 700;
+}
+
+.input-confirmar {
+    text-decoration: none;
+    width: 200px;
+    font-weight: 600;
+    background-color: var(--cor-principal);
+    color: var(--white-color);
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.input-confirmar:hover {
+    background-color: #c4c4c4;
+    color: #5a0000;
+}

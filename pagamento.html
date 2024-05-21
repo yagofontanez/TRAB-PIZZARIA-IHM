@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revise o Pagamento</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revise o Pagamento</title>
+  <link rel="stylesheet" href="style-pagamento.css">
 </head>
+
 <body>
-    
-    <div class="header">
-        <div class="nome">
-            <h1>Nomido's Pizzaria</h1>
-            <p>A melhor pizzaria do Brasil!</p>
-        </div>
-        <img src="pizza.png" width="200px">
+
+  <div class="header">
+    <div class="nome">
+      <h1>Nomido's Pizzaria</h1>
+      <p>A melhor pizzaria do Brasil!</p>
     </div>
-    <hr>
-    <h1>Confirme seu Pagamento</h1>
-    <h2>Escolha o método de Pagamento</h2>
-    <form action="compraconcluida.html">
+    <img src="pizza-logo.png" width="150px" alt="">
+  </div>
+  <hr style="width: 80vw;">
+  <div class="container-form">
+    <div class="textos-container">
+      <h1>Confirme seu Pagamento</h1>
+      <h2>Escolha o método de Pagamento</h2>
+    </div>
+    <form class="formulario-pag" action="compraconcluida.html">
+      <div class="divisao-label">
         <label for="pag">Forma de Pagamento</label>
         <select name="formaPagamentos">
           <optgroup label="Na entrega">
@@ -32,8 +39,11 @@
             <option value="cartao4">Cartão Débito</option>
           </optgroup>
         </select>
-        <input type="submit" value="Confirmar" />
-  </form>
+      </div>
+      <input class="input-confirmar" type="submit" value="Confirmar" />
+    </form>
+  </div>
 
 </body>
+
 </html>
