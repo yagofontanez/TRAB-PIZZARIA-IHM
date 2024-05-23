@@ -21,7 +21,14 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 15vh auto;
+    margin: 30vh auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -150px;
 }
 
 .header img {
@@ -44,4 +51,22 @@ body {
 .nome p {
     color: var(--white-color);
     font-size: 22px;
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    margin-top: 90px;
+}
+
+.link-voltar {
+    color: var(--white-color);
+    transition: all 0.4s ease;
+}
+
+.link-voltar:hover {
+    transform: scale(1.1);
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
+    <link rel="stylesheet" href="../styles/style-sobrenos.css">
 </head>
 <body>
     
@@ -12,31 +13,31 @@
             <h1>Nomido's Pizzaria</h1>
             <p>A melhor pizzaria do Brasil!</p>
         </div>
-        <img src="pizza.png" width="200px">
+        <img src="../assets/pizza-logo.png" width="150px">
     </div>
 
-    <div class="infos">
-        <p>Nós estamos localizados na cidade de Dois Córregos - SP</p>
-        <p>Atendemos toda a cidade (Frete a combinar)</p>
-        <p>Atendemos cidades vizinhas e próximas (Jaú, Bauru, Barra Bonita) com aumento de 80% no frete</p>
-    </div>
+        <div class="infos">
+            <p>Nós estamos localizados na cidade de Dois Córregos - SP</p>
+            <p>Atendemos toda a cidade (Frete a combinar)</p>
+            <p>Atendemos cidades vizinhas e próximas (Jaú, Bauru, Barra Bonita) com aumento de 80% no frete</p>
+        </div>
 
-    <hr>
+    <hr style="width: 80vw;">
     <div class="form-sugestoes">
         <form action="formenviado.html">
-            <label for="nome">
+            <label for="nome-input">
                 Nome
-                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome">
+                <input type="text" name="nome-input" id="nome-input" placeholder="Digite seu Nome">
             </label>
             <label for="telefone">
                 Telefone
                 <input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone">
             </label>
-            <label for="mensagem">
+            <label for="mensagem" class="form-msg">
                 Mensagem
                 <textarea name="mensagem" id="mensagem" placeholder="Digite sua Mensagem" cols="30" rows="10"></textarea>
             </label>
-            <input type="submit" value="Enviar">
+            <input class="btn-enviar" type="submit" value="Enviar">
         </form>
     </div>
 
