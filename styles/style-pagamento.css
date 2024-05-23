@@ -16,7 +16,7 @@ body {
     background: var(--cor-principal);
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,4 +132,23 @@ body {
 .input-confirmar:hover {
     background-color: #c4c4c4;
     color: #5a0000;
+}
+
+@media (max-width: 620px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nome h1 {
+        text-align: center;
+    }
+
+    .mensagem {
+        text-align: center;
+    }
+
+    .container-form {
+        margin: 20px;
+        text-align: center;
+    }
 }

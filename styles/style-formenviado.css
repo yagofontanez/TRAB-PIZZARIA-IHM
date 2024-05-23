@@ -16,7 +16,7 @@ body {
     background: var(--cor-principal);
     background-size: cover;
     background-position: center;
-    overflow: hidden;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,4 +69,18 @@ body {
 
 .link-voltar:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 620px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nome h1 {
+        text-align: center;
+    }
+
+    .mensagem {
+        text-align: center;
+    }
 }
